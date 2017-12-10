@@ -34,21 +34,21 @@ function hol(){
 
 }
 
-function eo(){
+function eo(){                               //Ugly and Untidy (need more working on this, Wife) - Z
         echo "Odd or Even"."\n";
         $t1 = rand(1,6);
         $t2 =  rand (1,6);
 
          $t3 = ($t1+$t2)%2;
         $t4 = $t1+$t2;
-        $n1 = readline("Please enter 'Odd' or 'Even' : ");
+        $n1 = readline("Please enter 'Odd' or 'Even' : ");        
         if ($t3 == 0){
 
                 $t3 = "Even";
         } else {$t3 = "Odd";}
          if ($n1 == $t3) {
 
-                echo "You Win"."\n";
+                echo "You Win"."\n";                 //Outcomes are too simple, Wife!! - Z
          } else {echo "You Lose"."\n";}
 
          echo "Generated Random ".$t4."\n";
